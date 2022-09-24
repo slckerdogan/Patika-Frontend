@@ -1,0 +1,48 @@
+body{
+    background-color:burlywood;
+}
+h1,h3{
+    text-align:center;
+    color:crimson;
+}
+#hiza{
+    position:relative;
+    left: 620px;
+}
+p{
+    color:olive;
+}
+h4{
+    text-align:center;
+    color: darkolivegreen;
+}
+ul{
+    list-style-position:inside;
+    position: relative;
+    left: 700px;
+    color:sienna;
+    list-style: square;
+}
+
+a:visited{
+    color: blueviolet;
+}
+a:hover{
+    color: white;
+    background-color: black;
+}
+
+a:active{
+    color: darkblue;
+    background-color: blue;
+}
+#hiza2{
+    position:relative;    
+    left: 620px;
+}
+#big{
+    color:tomato;
+}
+tr{
+    color: darkolivegreen;
+}
