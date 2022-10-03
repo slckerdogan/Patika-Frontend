@@ -2,9 +2,8 @@
 
 [7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
 
-1.<img src="1.png" alt="Resim Yüklenemedi">
-İlk eleman 7 olduğu için, root olarak 7'yi düşündük.
-
+1.İlk eleman 7 olduğu için, root olarak 7'yi düşündük.
+<img src="1.png" alt="Resim Yüklenemedi">
 2. 5 elemanı root'un solunda bulunur.
 <img src="2.png" alt="Resim Yüklenemedi">
 3. 1 elemanı root'un solunda bulunur. Aynı zamanda 5 sayısından küçük olduğu için onun da solunda bulunur.
@@ -22,4 +21,4 @@
 9. 4 elemanı root'un solunda bulunur. Aynı zamanda 5 sayısından küçük olduğu onun solunda ve 3 sayısından büyük olduğu için 3 sayısının sağında bulunur.
 <img src="9.png" alt="Resim Yüklenemedi">
 10. 2 elemanı root'un solunda bulunur. Aynı zamanda 1 sayısından büyük olduğu için onun sağında ve 3 sayısından küçük olduğu için 3 sayısının solunda bulunur.
-<img src="10.png" alt="Resim Yüklenemedi">
+![alt text](10.png)
