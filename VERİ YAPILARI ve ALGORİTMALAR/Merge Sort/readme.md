@@ -4,7 +4,6 @@ Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
 Big-O gösterimini yazınız.
 
 1. <img src="Mergesiralama.png" alt="Resim Yüklenemedi">
-2. Big-O göösterimi
-Dizinin n tane sayı içerdiği düşünülürse O(n.log(n)) şeklinde ifade edilir.
+2. Big-O gösterimi : Dizinin n tane sayı içerdiği düşünülürse O(n.log(n)) şeklinde ifade edilir.
 
 <a href="https://app.patika.dev/slckerdogan">Profil Linkim ektedir
