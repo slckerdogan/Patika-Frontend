@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type:none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DİZİ SORULARI</h1>
+    <div>
+        <label>1.SORU</label><br>
+        <p>
+            let dizi = [2,5,8,11,15,17];<br>
+            Uygun dizi metotlarını kullanarak  yukarıda verilen dizinin elemanları 
+            içinde 10'dan büyük olan elemanların 5'er katından oluşan yeni bir dizi oluşturun. (sonuç [55, 75, 85] olmalı.)
+        </p>
+        <h5>ÇÖZÜM</h5>
+        <img src="3.PNG" alt=""><br>
+        CEVAP: <strong><span id="first"></span></strong><br>
+    </div>
+    <hr>
+    <div>
+        <label>2.SORU</label><br>
+        <p>
+            let dizi = [3,6,9,14,16];<br>
+            Uygun dizi metotlarını kullanarak, yukarıdaki dizi için aşağıdaki şartları sağlayan myFunction fonksiyonunu yazın.
+            Elemanların arasında 5'ten büyük olan olan bir eleman varsa konsola "Beşten büyük bir eleman mevcut." yoksa "5'ten büyük eleman mevcut değil." yazdır.
+        </p>
+        <h5>ÇÖZÜM</h5>
+        <img src="1.PNG" alt=""><br>
+        CEVAP: <strong><span id="second"></span></strong>
+    </div>
+    <hr>
+    <div>
+        <label>3.SORU</label><br>
+        <p>
+            let dizi = [2,3,4];<br>
+            Uygun dizi metodunu kullanarak yukarıda verilen dizinin elemanlarının çarpımının sonucunu (24) veren bir fonksiyon yazınız.
+        </p>
+        <h5>ÇÖZÜM</h5>
+        <img src="2.PNG" alt=""><br>
+       CEVAP: <strong><span id="third"></span></strong>
+    </div>
+    <script>
+        //let dizi = [2,5,8,11,15,17];
+        // Uygun dizi metotlarını kullanarak  yukarıda verilen dizinin elemanları 
+        // içinde 10'dan büyük olan elemanların 5'er katından oluşan yeni bir dizi oluşturun. (sonuç [55, 75, 85] olmalı.)
+        let dizi = [2,5,8,11,15,17];
+        let dizi2=dizi.filter(item=>item>10);
+        dizi2=dizi2.map(item=>item*5);
+        let name=document.querySelector("#first");
+        name.innerHTML=dizi2;
+
+        
+        //let dizi = [3,6,9,14,16];
+        // Uygun dizi metotlarını kullanarak, yukarıdaki dizi için aşağıdaki şartları sağlayan myFunction fonksiyonunu yazın.
+        // Elemanların arasında 5'ten büyük olan olan bir eleman varsa konsola "Beşten büyük bir eleman mevcut." yoksa "5'ten büyük eleman mevcut değil." yazdır.
+        function myFunction (dizi){
+            var sayi=dizi.find(item=>item>5);
+            if (sayi){
+                var explanation="Beşten büyük bir eleman mevcut";
+                let name2=document.querySelector("#second");
+                name2.innerHTML=explanation;
+            }
+            else{
+                var explanation="Beşten büyük bir eleman mevcut değil";
+                let name2=document.querySelector("#second");
+                name2.innerHTML=explanation;
+            }
+        }
+        let dizi3 = [3,6,9,14,16];
+        myFunction(dizi3);
+
+
+        //let dizi = [2,3,4];
+        // Uygun dizi metodunu kullanarak yukarıda verilen dizinin elemanlarının çarpımının sonucunu (24) veren bir fonksiyon yazınız.
+        function islem(sonuc,carpım){
+            return sonuc*carpım;
+        }
+        let dizi4=[2,3,4];
+        const result=dizi4.reduce(islem,1)
+        let name3=document.querySelector("#third");
+        name3.innerHTML=result;
+    </script>
+</body>
+
+</html>
